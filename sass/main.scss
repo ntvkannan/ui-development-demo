@@ -1,0 +1,33 @@
+// Fonts
+@import 'fonts';
+
+// Custom Variables - Bootstrap
+@import 'custom-variable';
+
+// Bootstrap  v5.3.2
+@import '../../node_modules/bootstrap/scss/bootstrap'; 
+
+// Owl Carousel
+@import '../../node_modules/owl.carousel/src/scss/owl.carousel.scss';
+@import '../../node_modules/owl.carousel/src/scss/owl.theme.default.scss';
+
+// Custom CSS
+@import 'base';
+@import 'layout';
+@import 'elements';
+
+@import 'header';
+@import 'footer';
+@import 'nav-left';
+@import 'side-bar';
+
+@import 'hero';
+@import 'card';
+@import 'blog';
+
+@import 'account';
+@import 'user-profile';
+
+@import 'carousel';
+@import 'popup';
+@import 'notification';

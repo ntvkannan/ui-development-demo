@@ -1,0 +1,227 @@
+.view-all-items{
+    position: absolute;
+    right: 0;
+    top: 6px;
+    font-size: 0.875rem;
+
+    &.has-category{
+        top: 5px; 
+    }
+}
+
+///////////////////////////////////////
+/// CAROUSEL GLOBAL
+.owl-carousel{
+    padding-bottom: 96px;
+
+    .owl-nav{
+        position: absolute;
+        right: 0;
+        top: -56px;
+        display: flex;
+    
+        button{
+            &.owl-prev,
+            &.owl-next{
+                display: block;
+                background: $gray-900;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+    
+                &.disabled{
+                    background: $gray-300;
+                }
+            }
+            &.owl-prev{
+                margin-right: 8px;
+            }
+            
+        }
+    }
+    
+    .owl-dots{
+        position: absolute;
+        left: 50%;
+        bottom: 48px;
+    
+        .owl-dot{
+            span{
+                display: inline-block;
+                width: 12px;
+                height: 6px;
+                border-radius: 10px;
+                background: rgba($primary, 0.3);
+                margin: 4px;
+            }
+            &.active{
+                span {
+                    width: 32px;
+                    background: $primary;
+                }
+            }
+        }
+    }
+}
+
+
+///////////////////////////////////////
+/// HERO CAROUSEL
+.hero-carousel{
+    // width: 100%;
+    // height: 100%;
+    // position: relative;
+
+    @mixin nav-size{
+        display: block;
+        width: 40px ;
+        height: 40px;
+
+        @include media-breakpoint-up(md) { 
+            width: 56px;
+            height: 56px;
+        }
+
+        @include media-breakpoint-up(lg) { 
+            width: 72px;
+            height: 72px;
+        }
+    }
+
+    &.owl-carousel{
+        padding-bottom: 0;
+        // padding-bottom: 40px;
+
+        // @include media-breakpoint-down(lg) {
+        //     padding-bottom: 40px;
+        // }
+        
+        .owl-item {
+            img{
+                width: auto;
+            }
+        }
+
+        .owl-nav{
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            top: auto;
+    
+            @include media-breakpoint-up(md) {
+                bottom: 80px;
+                right: 60px;
+            }
+
+            @include media-breakpoint-up(lg) { 
+                bottom: 80px;
+                right: 80px;
+            }
+
+            button{
+                &.owl-prev{
+                    background: transparent;
+                    margin-right: 32px;
+
+                    @include media-breakpoint-up(md) {
+                        margin-right: 72px;
+                    }
+        
+                    span{
+                        @include nav-size;
+                        background: transparent url(../images/previous.png) no-repeat 0 0;
+                        margin-right: 24px;
+                        background-size: 100%;
+                    }
+                }
+
+                &.owl-next{
+                    background: transparent;
+                    span{
+                        @include nav-size;
+                        background: transparent url(../images/next.png) no-repeat 0 0;
+                        background-size: 100%;
+                    }
+                }
+            }
+        }
+    
+        .owl-dots{
+            display: none;
+        }
+
+    }
+}
+
+///////////////////////////////////////
+/// TAG CAROUSEL
+.tag-carousel{
+    position: relative;
+    padding-top: 44px;
+    margin-top: -40px;
+
+    &.owl-carousel{
+        padding-bottom: 32px;
+
+        .owl-nav{
+            top: -17px;
+        }
+    }
+
+    .btn{
+        border-radius: 16px;
+        color: #6c757d;
+        border-color: $gray-300;
+
+        &.btn-dark{
+            color: #fff;
+
+            &:hover{
+                color: #6c757d;
+            }
+        }
+    }
+    .owl-dot{
+        display: none;
+    }
+
+    &.view-all{
+
+        .owl-nav{
+            right: 68px;
+        }    
+    }
+
+  }
+
+///////////////////////////////////////
+/// AUDIO CAROUSEL
+  .audio-carousel,
+  .video-carousel{
+
+    // &.owl-carousel{
+        
+    //     .owl-nav{
+    //         display: none;
+    //     }
+    // }
+
+    &.hide-nav{
+
+        .owl-nav{
+            display: none;
+        }
+    }
+
+    &.view-all{
+
+        .owl-nav{
+            right: 68px;
+        }    
+    }
+
+  }
+
+//   .owl-item {
+//     flex: 0 0 auto !important;
+//   }

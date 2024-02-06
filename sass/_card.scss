@@ -1,0 +1,1145 @@
+
+
+///////////////////////////////////////
+/// Hero Card
+.h-card{
+    padding: 1rem;
+
+    &__title{
+        font-family: $font-family-base;
+        font-size: 0.875em;
+        text-transform: uppercase;
+        padding-bottom: 1.5rem;
+    }
+
+    &__img{
+        padding-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    &__heading-up{
+        font-size: 0.875rem;
+        margin-bottom: 1.5rem;
+        color: $gray-500;
+
+        > *{
+            margin-right: 16px;
+        }
+    }
+
+    &__category{
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 16px;
+        border:1px solid $gray-400;
+    }
+
+    &__divider{
+        width: 1px;
+        height: 100%;
+        border-right: 1px solid $gray-400;
+    }
+
+    &__desc{
+        color: $gray-500;
+        font-size: 0.875rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $gray-300;
+    }
+
+    &__down{
+        display: inline-block;
+        margin:4rem 0 2rem 0;
+        color: $black;
+        font-weight: 600;
+    }
+}
+
+///////////////////////////////////////
+/// CONTESTS & CHALLENGES
+.contests-card{
+    // width: 397px;
+    // height: 256px;
+    position: relative;
+    margin-bottom: 20px;
+
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+
+    // @include media-breakpoint-up(sm) { 
+    //     width: 520px; 
+    // }
+
+    // @include media-breakpoint-up(md) { 
+    //     width: 328px; 
+    // }
+
+    // @include media-breakpoint-up(lg) { 
+    //     width: 298px; 
+    // }
+    // @include media-breakpoint-up(xl) { 
+    //     width: 358px;
+    // }
+    // @include media-breakpoint-up(xxl) { 
+    //     width: 397px;
+    // }
+
+    
+
+    &__content{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 0.8rem;
+        width: 100%;
+        background-image: linear-gradient(transparent 0%, $gray-500 90%);
+        border-radius: 0 0 8px 8px;
+        color: #fff;
+    }
+
+    &__img{
+        width: 100%;
+        // height: 100%;
+        // object-fit: cover;
+        border-radius: 8px;
+    }
+
+    // &__heading{
+        
+    // }
+
+    &__heading-down{
+        font-size: 1rem;
+        font-weight: 500;
+
+        // @include media-breakpoint-up(lg) {
+        //     font-size: 0.75rem;
+        // }
+        // @include media-breakpoint-up(xl) {
+        //     font-size: 0.875rem;
+        // }
+    }
+
+    &__btn{
+        text-wrap: nowrap;
+        margin-left: 2rem;
+    }
+}
+
+///////////////////////////////////////
+/// BROWSE BY GENRE
+.genre-card{
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    span{
+        display: flex;
+        width: 100%;
+        height: 104px;
+        padding: 24px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: $headings-font-family;
+        border:1px solid #D1D1D1;
+        border-radius: 12px;
+        transition: all 0.3s;
+
+        &:hover{
+            border:1px solid $gray-500;
+        }
+    }
+}
+
+///////////////////////////////////////
+/// EDITOR PICKS
+.epics-card{
+    // width: 293px;
+    // height: 392px;
+    position: relative;
+    margin-bottom: 20px;
+    color: #fff;
+
+    // @include media-breakpoint-up(xl) { 
+    //     width: 264px;
+    // }
+    // @include media-breakpoint-up(xxl) { 
+    //     width: 293px;
+    // }
+
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    &__content-up{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 16px;
+        font-size: 0.75rem;
+    }
+
+    .user-loggedin{
+        justify-content: flex-end; 
+    }
+
+    &__rating{
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon{
+        color: yellow;
+
+    }
+
+    &__content-down{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 16px 16px 16px;
+        background: linear-gradient(transparent 0%, rgba($black, 0.8) 70%);
+        backdrop-filter: blur(2px);
+        border-radius: 0 0 8px 8px;
+
+        &:before{
+            content: '';
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__category-fill{
+        padding:8px 16px;
+        background: $gray-700;
+        border-radius: 16px;
+    }
+
+    &__category{
+        padding: 8px 16px;
+        border-radius: 16px;
+        border:1px solid $gray-400;
+    }
+
+    &__divider{
+        width: 1px;
+        height: 100%;
+        border-right: 1px solid $gray-400;
+    }
+
+    &__heading{
+        margin-bottom: 12px;
+        font-size: 1rem;
+    }
+
+    &__heading-down{
+        font-size: 12px;
+        > *{
+            margin-right: 8px;
+        }
+    }
+
+    &__rating{
+        strong{
+            margin:0 6px;
+        }
+    }
+}
+
+// .epics-card__content-up.user-loggedin{
+//         justify-content: flex-end; 
+//     }
+
+///////////////////////////////////////
+/// POPULAR AUTHORS - Portrait
+.author-card{
+    // width: 190px;
+    // height: 252px;
+    position: relative;
+    margin-bottom: 20px;
+    color: #fff;
+
+    // @include media-breakpoint-up(xl) { 
+    //     width: 166px;
+    // }
+    // @include media-breakpoint-up(xxl) { 
+    //     width: 190px;
+    // }
+
+    &__img{
+        // width: 100%;
+        // height: 100%;
+        // object-fit: cover;
+        border-radius: 8px;
+    }
+
+    &__content-down{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10px 10px 10px;
+        background: linear-gradient(transparent 0%, rgba($black, 0.8) 70%);
+        border-radius: 0 0 8px 8px;
+    }
+
+    &__heading{
+        margin-bottom: 4px;
+    }
+    &__heading-down{
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+
+        > *{
+            width: 45%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    } 
+}
+
+///////////////////////////////////////
+/// POPULAR AUTHORS - Landscape
+.author-card-ls{
+
+}
+
+///////////////////////////////////////
+/// WHAT'S NEW TODAY
+.new-card-portrait{
+    // width: 397px;
+    position: relative;
+    margin-bottom: 32px; 
+    
+    @include media-breakpoint-up(md) {
+        margin-bottom: 32px; 
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+    }
+
+    // @include media-breakpoint-up(lg) { 
+    //     width: 280px;
+        
+    // }
+    // @include media-breakpoint-up(xl) { 
+    //     width: 340px;
+    // }
+    // @include media-breakpoint-up(xxl) { 
+    //     width: 397px;
+    // }
+
+    &:not(:last-child){
+        margin: 0 20px 20px 0;
+    }
+
+    &__img{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__content-up{
+        position: absolute;
+        left: 0;
+        top:0;
+        padding: 16px;
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+
+    &__category-fill{
+        padding:8px 16px;
+        background: $gray-700;
+        border-radius: 16px;
+    }
+
+    &__heading-up{
+        font-size: 0.75rem;
+        color: $gray-500;
+        margin-bottom: 1.25rem;
+
+        > *{
+            margin-right: 8px;
+        }
+    }
+
+    &__category{
+        padding: 4px 12px;
+        border-radius: 16px;
+        border:1px solid $gray-400;
+    }
+
+    &__divider{
+        width: 1px;
+        height: 100%;
+        border-right: 1px solid $gray-400;
+    }
+
+    &__heading{
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    &__heading-down{
+        font-size: 0.875rem;
+    }
+}
+
+.new-card-landscape{
+    display: flex;
+    // width: 397px;
+    padding-bottom: 24px;
+    // height: 261px;
+
+    @include media-breakpoint-up(md) {
+        flex-direction: column; 
+    }
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        justify-content: space-between; 
+    }
+
+    &:not(:first-child){
+        padding-top: 24px;
+    }
+    &:not(:last-child){
+        border-bottom: 1px solid #DEDEDE;
+    }
+    
+
+    > *{
+        width: 48%;
+
+        @include media-breakpoint-up(md) {
+            width: 100%; 
+        }
+    
+        @include media-breakpoint-up(lg) {
+            width: 48%;
+        }
+    }
+
+    &__content{
+        order:1;
+
+        @include media-breakpoint-up(md) {
+            order:2; 
+        }
+    
+        @include media-breakpoint-up(lg) {
+            order:1;
+        }
+    }
+
+    &__img{
+        order:2;
+
+        @include media-breakpoint-up(md) {
+            order:1; 
+        }
+    
+        @include media-breakpoint-up(lg) {
+            order:2;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &__heading-up{
+        font-size: 0.75rem;
+        color: $gray-500;
+        margin-bottom: 1.25rem;
+        padding-top: 20px;
+
+        > *{
+            margin-right: 8px;
+        }
+    }
+
+    &__category{
+        padding: 4px 12px;
+        border-radius: 16px;
+        border:1px solid $gray-400;
+    }
+
+    &__divider{
+        width: 1px;
+        height: 100%;
+        border-right: 1px solid $gray-400;
+    }
+}
+
+///////////////////////////////////////
+/// POPULAR CATEGORIES
+.category-card{
+    // width: 190px;
+    // height: 190px;
+    position: relative;
+    margin-bottom: 20px;
+    color: #fff;
+
+    // @include media-breakpoint-up(xl) { 
+    //     width: 166px;
+    //     height: 166px;
+    // }
+    // @include media-breakpoint-up(xxl) { 
+    //     width: 190px;
+    //     height: 190px;
+    // }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    &__heading{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding:12px;
+    }
+}
+
+///////////////////////////////////////
+/// FEATURED ARTWORKS
+.featured-card{
+    // width: 606px;
+    // height: 360px;
+    position: relative;
+    margin-bottom: 20px;
+
+    // @include media-breakpoint-up(xl) { 
+    //     width: 538px;
+    //     height: 360px;
+    // }
+    // @include media-breakpoint-up(xxl) { 
+    //     width: 606px;
+    //     height: 360px;
+    // }
+
+    &__img{
+        width: 100%;
+        // width: 100%;
+        // height: 100%;
+        // object-fit: cover;
+        border-radius: 16px;
+    }
+
+    &__content{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 24px;
+        color: #fff;
+        background: linear-gradient(transparent 0%, rgba($black, 0.8) 70%);
+        border-radius: 0 0 12px 12px;
+    }
+
+    &__heading-up{
+        margin-bottom: 24px;
+    }
+
+    &__category{
+        padding: 8px 16px;
+        border-radius: 16px;
+        border:1px solid $gray-400;
+    }
+}
+
+///////////////////////////////////////
+/// AUDIO VIDEO BOOKS
+
+.audio-video-card{
+    background: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    width: 292px;
+    position: relative;
+    border: 1px solid $gray-300;
+    margin-bottom: 24px;
+
+    &.responsive-card{
+        width: 100%;
+    }
+
+    &.no-border{
+        padding: 0px;
+        border: none;
+    }
+
+    .audio,
+    .video{
+        
+        &__ratings{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 24px;
+            top: 24px;
+            padding: 4px 12px;
+            background-color: rgba($black, 0.8);
+            backdrop-filter: blur(2px);
+            color:#fff;
+            border-radius: 30px;
+            font-size: 0.75rem;
+
+            .icon-fill{
+                color: yellow;
+                margin-right: 4px;
+            }
+        }
+    
+        &__img{
+            width: 100%;
+            display: block;
+            margin-bottom: 12px;
+            border-radius: 12px;
+        }
+
+        &__heading{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+
+            display: -moz-box;
+            -moz-line-clamp: 2;
+            -moz-box-orient: vertical;
+
+            display: box;
+            line-clamp: 2;
+            box-orient: vertical;
+
+            overflow: hidden;
+        }
+    
+        &__heading-up{
+            font-size: 0.75rem;
+            color: $gray-500;
+            margin-bottom: 12px;
+    
+            > *{
+                margin-right: 8px;
+            }
+        }
+    
+        &__category{
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 16px;
+            border:1px solid $gray-400;
+            font-size: 0.75rem;
+        }
+    
+        &__divider{
+            width: 1px;
+            height: 100%;
+            border-right: 1px solid $gray-400;
+        }
+    
+        &__desc{
+            color:$gray-400;
+            margin-bottom: 12px;
+            font-size: 0.875rem;
+            height: 40px ;
+        }
+
+        &__btn-row{
+            display: flex;
+            justify-content: space-between;
+
+            a{
+                display: flex;
+                align-items: center;
+                font-size: 0.875rem;
+                font-weight: 600;
+            }
+        }
+
+        &__btns{
+            .icon-btn{
+                color:$gray-500;
+                margin-left: 16px;
+            }
+        }
+
+        &__date{
+            color: $gray-400;
+            font-size: 0.75rem;
+        }
+
+        &__price{
+            font-size: 1.125rem;
+        }
+
+        &__price-new{
+            color: $black;
+        }
+
+        &__price-old{
+            color: $gray-400;
+            text-decoration: line-through;
+        }
+
+        .author-box-gl{
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+// .audio-card{
+//     background: #fff;
+//     border-radius: 16px;
+//     padding: 16px;
+//     width: 292px;
+//     position: relative;
+
+//     &.video-card{
+//         width: 392px;
+//     }
+
+//     &__ratings{
+//         position: absolute;
+//         right: 24px;
+//         top: 24px;
+//         padding: 4px 12px;
+//         background-color: rgba($black, 0.8);
+//         backdrop-filter: blur(2px);
+//         color:#fff;
+//         border-radius: 30px;
+//         font-size: 0.75rem;
+//     }
+
+//     &__img{
+//         width: 100%;
+//         display: block;
+//         margin-bottom: 24px;
+//     }
+
+//     &__heading-up{
+//         font-size: 0.75rem;
+//         color: $gray-500;
+//         margin-bottom: 1.25rem;
+
+//         > *{
+//             margin-right: 8px;
+//         }
+//     }
+
+//     &__category{
+//         padding: 8px 16px;
+//         border-radius: 16px;
+//         border:1px solid $gray-400;
+//         font-size: 0.75rem;
+//     }
+
+//     &__divider{
+//         width: 1px;
+//         height: 100%;
+//         border-right: 1px solid $gray-400;
+//     }
+
+//     &__heading-down{
+//         color:$gray-400;
+//         margin-bottom: 12px;
+//         font-size: 0.875rem;
+//     }
+
+//     a{
+//         font-size: 0.875rem;
+//         font-weight: 500;
+//     }
+
+// }
+
+///////////////////////////////////////
+/// ARTICLE OF THE DAY
+.day-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(to right, #282223 0%, #34525A 30%);
+    border-radius: 12px;
+    width: 100%;
+    min-height: 320px;
+    color: #fff;
+
+    @include media-breakpoint-up(md) { 
+        flex-direction: row;
+    }
+
+    &__content{
+        height: 100%;
+        padding: 40px;
+
+        @include media-breakpoint-up(md) { 
+            padding: 0 40px;
+        }
+    }
+
+    &__desc{
+        font-size: 0.875rem;
+        margin-bottom: 3rem;
+    }
+
+    &__img{
+        width: 100%;
+
+        img{
+            @include media-breakpoint-down(md) { 
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                border-radius: 0 0 12px 12px;
+            }
+
+            @include media-breakpoint-up(md) { 
+                border-radius: 0 12px 12px 0;
+            }
+        }
+
+        @include media-breakpoint-up(md) { 
+            height: 100%;
+        }
+    }
+}
+
+///////////////////////////////////////
+/// STORY CARD
+.story-card{
+    position: relative;
+    margin-bottom: 56px;
+
+    &__img{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__content-up{
+        position: absolute;
+        left: 0;
+        top:0;
+        padding: 16px;
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+
+    &__category-fill{
+        padding:8px 16px;
+        background: $gray-700;
+        border-radius: 16px;
+    }
+
+    &__heading-up{
+        font-size: 0.75rem;
+        color: $gray-500;
+        margin-bottom: 1.25rem;
+
+        > *{
+            margin-right: 8px;
+        }
+    }
+
+    &__category{
+        padding: 4px 12px;
+        border-radius: 16px;
+        border:1px solid $gray-400;
+    }
+
+    &__divider{
+        width: 1px;
+        height: 100%;
+        border-right: 1px solid $gray-400;
+    }
+
+    &__heading{
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__desc{
+        font-size: 0.875rem;
+        height: 40px;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+        display: -moz-box;
+        -moz-line-clamp: 2;
+        -moz-box-orient: vertical;
+
+        display: box;
+        line-clamp: 2;
+        box-orient: vertical;
+
+        overflow: hidden;
+
+        &::after{
+            content: '...';
+            display: inline-block;
+            width: 1rem;
+        }
+    }
+}
+
+///////////////////////////////////////
+/// DEFAULT CARD
+.default-card{
+    position: relative;
+    margin-bottom: 56px;
+
+    &.default-card-border{
+        border:1px solid $gray-200;
+        border-radius: 12px;
+        padding: 16px;
+
+        &.sm-padding{
+            padding: 8px;
+            padding-bottom: 16px;
+        }
+    }
+
+    .card{
+
+        &__img{
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    
+        &__content-up{
+            position: absolute;
+            left: 0;
+            top:0;
+            padding: 16px;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+    
+        &__category-fill{
+            padding:8px 16px;
+            background: $gray-700;
+            border-radius: 16px;
+        }
+    
+        &__heading-up{
+            font-size: 0.75rem;
+            color: $gray-500;
+            margin-bottom: 1.25rem;
+    
+            > *{
+                margin-right: 8px;
+            }
+        }
+    
+        &__category{
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 16px;
+            border:1px solid $gray-400;
+        }
+    
+        &__divider{
+            width: 1px;
+            height: 100%;
+            border-right: 1px solid $gray-400;
+        }
+    
+        &__heading{
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    
+        &__desc{
+            font-size: 0.875rem;
+    
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+    
+            display: -moz-box;
+            -moz-line-clamp: 2;
+            -moz-box-orient: vertical;
+    
+            display: box;
+            line-clamp: 2;
+            box-orient: vertical;
+    
+            overflow: hidden;
+    
+            &::after{
+                content: '...';
+                display: inline-block;
+                width: 1rem;
+            }
+        }
+    }
+
+    .btns-row{
+        margin-top: 16px;
+    }
+}
+
+.default-card-landscape{
+
+    .card{
+
+        &__row{
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &__img{
+            width: 184px;
+            margin-bottom: 0;
+        }
+
+        &__content{
+            width: calc(100% - 184px);
+            padding: 0 0 0 16px;
+        }
+
+        &__content-up{
+            left:16px;
+            top: 16px;
+        }
+    }
+
+    .footer-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.default-card-border{
+    border:1px solid $gray-200;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+
+    .author-box-gl{
+        margin-bottom: 0;
+    }
+}
+
+///////////////////////////////////////
+/// COLLECTION CARD
+.collection-card{
+    padding: 8px;
+    border: 1px solid $gray-200;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+
+    &__img-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        > *{
+            width: 32%;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__img-first{
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+    }
+
+    &__img-second{
+        border-radius: 0 0 0 16px;
+    }
+
+    &__img-fourth{
+        border-radius: 0 0 16px 0;
+    }
+
+    &__title{
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    &__qty{
+        font-size: 0.875rem;
+        color: $gray-500;
+    }
+}
+
+
+
+// &__author-box{
+//     border-top:1px solid #E3E3E3;
+//     padding-top:1.25rem;
+//     margin-top: 1rem;
+//     display: flex;
+// }
+
+// &__author-photo{
+//     width:40px;
+//     margin-right: 8px;
+
+//     img{
+//         width: 100%;
+//         border-radius: 100%;
+//     }
+// }
+
+// // &__author-info{
+    
+// // }
+
+// &__author-name{
+//     font-size: 0.875rem;
+//     font-weight: 600;
+// }
+
+// &__author-position{
+//     font-size: 0.75rem;
+//     color: $gray-500;
+// }

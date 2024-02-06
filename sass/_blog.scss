@@ -1,0 +1,134 @@
+////////////////////////////////////////////////
+/// GLOBAL FORM
+.form-select{
+    font-size: 0.875rem;
+}
+
+////////////////////////////////////////////////
+/// WRITING BLOG
+.create-blog{
+    max-width: 583;
+    margin: 0 auto;
+
+    &__row{
+        margin-bottom: 16px;
+    }
+
+    &__label{
+        font-size: 0.875rem;
+        width: 100px;
+    }
+
+    .form-control{
+        font-size: 0.875rem;
+    }
+
+    &__title{
+        border: none;
+
+        &.form-control{
+            font-family: $headings-font-family;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+    }
+
+    &__subtitle{
+        border: none;
+    } 
+}
+
+////////////////////////////////////////////////
+/// PREVIEW BLOG
+.preview{
+
+    &__header{
+        text-align: center;
+    }
+
+    &__heading-up{
+        text-transform: uppercase;
+        color: $primary-600;
+        margin-bottom: 1.75rem;
+    }
+
+    &__heading{
+        font-size: 3.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__heading-down{
+        color: $gray-500;
+        margin-bottom: 5rem;
+    }
+
+    &__img-box{
+        margin-bottom: 4rem;
+    }
+
+    &__img{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    &__img-down{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content{
+        width: 80%;
+        margin: 0 auto;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
+
+    &__text{
+        margin-bottom: 2.5rem;
+    }
+
+    &__inner-t3{
+        font-size: 1.875rem;
+        font-family: $font-family-base;
+        font-weight: 400;
+        margin-bottom: 1.75rem;
+    }
+
+    &__inner-t6{
+        font-size: 1rem;
+        font-family: $font-family-base;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        font-size: 1.125rem;
+    }
+
+    &__rating-box{
+        margin-bottom: 2.5rem;
+    }
+
+    &__ratings{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__rating{
+        display: flex;
+        align-items: center;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+        color: $gray-500;
+    }
+
+    &__comment-box{
+        margin-bottom: 2.5rem; 
+    }
+
+    .link-btn{
+        text-decoration: underline;
+    }
+}

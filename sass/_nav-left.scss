@@ -1,0 +1,28 @@
+///////////////////////////////////////
+/// NAV LEFT
+.wp-logo{
+    margin:24px 0 60px 0;
+}
+
+.wp-nav-left{
+
+    &__text{
+        margin-left: 8px;
+    }
+
+    .nav-item{
+        margin-bottom: 24px;
+    }
+
+    .nav-link{
+        display: flex;
+        align-items: center;
+        color: $gray-400;
+        padding: 4px;
+
+        &.active{
+            color: $black;
+            border-right:2px solid $primary;
+        }
+    }
+}

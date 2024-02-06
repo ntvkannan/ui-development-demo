@@ -1,0 +1,48 @@
+.wp-footer{
+    z-index: 1000000;
+    position: relative;
+    background: $gray-50;
+    padding: 64px 0;
+    font-size: 0.875rem;
+
+    &__row{
+        
+
+        @include media-breakpoint-up(md) { 
+            display: flex;
+            justify-content: space-between;
+         }
+    }
+
+    &__left{
+        > * {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__logo{
+        display: block;
+    }
+
+    &__logo-down{
+        width: 320px;
+        
+    }
+
+    .nav-link{
+        color: $gray-500;
+        padding: 0;
+        margin-right: 32px;
+    }
+}
+
+.get-app{
+    color: $primary-700;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+
+    > * {
+        margin-bottom: 16px;
+    }
+}

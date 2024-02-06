@@ -1,0 +1,383 @@
+///////////////////////////////////////
+/// PREVIEW SECTION
+.preview-section{
+    margin-bottom: 40px;
+}
+
+.preview-title-t5{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    .normal{
+        font-weight: 400;
+    }
+}
+
+///////////////////////////////////////
+/// DIVIDER
+.divider-hr{
+    width: 100%;
+    height: 1px;
+    border-bottom:1px solid #E3E3E3;
+    margin: 1rem 0 1.25rem 0;
+
+    &.mt-0{
+        margin-top:-1rem !important;
+    }
+}
+
+.divider-vr{
+    width: 1;
+    height: 20px;
+    border-left:1px solid #E3E3E3;
+    margin: 0 8px;
+}
+
+///////////////////////////////////////
+/// DIVIDER
+.no-filter-items{
+    padding: 128px 0;
+    text-align: center;
+
+    img{
+        margin-bottom: 32px;
+    }
+
+    &__title{
+        font-size: 2.25rem;
+    }
+}
+
+///////////////////////////////////////
+/// INLINE INFO
+.inline-info{
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+
+    &__item{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+
+        &:not(:first-child){
+            margin-left: 16px;
+        }
+    }
+
+    &__icon{
+        margin-right: 4px;
+    }
+
+    &__rating{
+        color: $gray-500;
+
+        strong{
+            color: $black;
+        }
+
+        .icon-fill{
+            color: #FDB022;
+        }
+    }
+
+    .btn-outline-light{
+        color: $primary
+    }
+
+    a{
+        .inline-info__icon{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+///////////////////////////////////////
+/// AUTHOR BOX DEFAULT
+.author-box-gl{
+    display: flex;
+    margin-bottom: 32px;
+
+    .author{
+
+        &__photo{
+            width:48px;
+            margin-right: 12px;
+        
+            img{
+                width: 100%;
+                border-radius: 100%;
+            }
+        }
+    
+        // &__info{
+        
+        // }
+    
+        &__name{
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        &__position{
+            font-size: 0.875rem;
+            color: $gray-500;
+        }
+
+    }
+}
+
+// SMALL --------------------
+.author-box-gl-sm{
+
+    .author{
+
+        &__photo{
+            width: 40px;
+            margin-right: 8px;
+        }
+
+        &__name{
+            font-size: 0.875rem;
+        }
+        
+        &__position{
+            font-size: 0.75rem;
+        }
+    }
+}
+
+///////////////////////////////////////
+/// BUTTONS ROW IN CARD
+.btns-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+///////////////////////////////////////
+/// SEARCH ROW WITH FILTER
+.search-filter-row{
+    display: flex;
+    justify-content: space-between;
+    color: $gray-500;
+    
+
+    & :not(:first-child){
+        margin-left:20px;
+    }
+
+    &__search{
+        // width: calc(100% - 166px - 40px);
+        flex: 1;
+        color: $black;
+    }
+
+    &__date{
+        width: 166px;
+    }
+
+    &__filter{
+        width: 118px;
+        color: $gray-500;
+    }
+
+    &__list-grid-btn{
+        width: 40px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-text-inline__txt{
+        margin-left: 8px;
+        color: $gray-500;
+    }
+
+}
+
+///////////////////////////////////////
+/// CHAPTERS - AUDIO PREVIEW
+.preview-section{
+    margin-bottom: 40px;
+}
+
+.chapter{
+    margin-bottom: 40px;
+
+    &__row{
+        display: flex;
+        margin-bottom: 24px;
+
+        &.yes-border{
+            padding-bottom: 20px;
+            border-bottom:1px solid #E8E8E8;
+        }
+    }
+
+    &__left{
+        flex: 1;
+        padding-right: 24px;
+        display: flex;
+
+        &.column{
+            flex-direction: column;
+
+            .chapter__no{
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &__right{
+
+        text-align: right;
+
+        &.column{
+            flex-direction: column;
+            align-items: flex-end;
+
+            .chapter__duration{
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &__heading-summary{
+        font-weight: 600;
+        font-family: $font-family-base;
+
+        .normal{
+            color: $gray-500;
+            font-weight: 400;
+        }
+    }
+
+    &__no{
+        color: $gray-500;
+        padding-right: 4px;
+    }
+
+    &__title{
+        color: $gray-900;
+        font-weight: 500;
+    }
+
+    &__duration{
+        color: $gray-500;
+    }
+
+    &__viewall{
+        text-align: center;
+
+        a{
+            text-decoration: underline;
+        }
+    }
+
+    &__btns{
+        display: flex;
+        justify-content: flex-end;
+
+        > *{
+            margin-left: 16px;
+        }
+    }
+    
+}
+
+.sidebar-section{
+
+    .chapter__no{
+        font-size: 0.75rem;
+    }
+
+    .chapter__title{
+        font-size: 0.875rem;
+    }
+    .chapter__right{
+        color: $gray-400;
+    }
+}
+
+///////////////////////////////////////
+/// COMMENTS - AUDIO PREVIEW
+
+.user-comment{
+    display: flex;
+    margin-bottom: 32px;
+
+    &__photo{
+        width: 56px;
+        height: 56px;
+
+        img{
+            width: 100%;
+            border-radius: 100%;
+        }
+    }
+
+    &__info{
+        flex:1;
+        padding-left: 8px;
+        font-size: 0.875rem;
+    }
+
+    &__txt-up{
+        display: flex;
+        color: $gray-400;
+        margin-bottom: 4px;
+    }
+}
+
+
+
+///////////////////////////////////////
+/// ICON TEXT INLINE
+.icon-text-inline{
+    display: flex;
+    margin-bottom: 12px;
+
+    &__txt{
+        margin-left: 8px;
+    }
+}
+
+.txt-blue{
+    color: $primary
+}
+
+.txt-green{
+    color:#32D583;
+}
+
+///////////////////////////////////////
+/// SOCIAL CIRCLE
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &__circle{
+        width:80px;
+        height: 80px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+
+        &.facebook{
+            background-color: #DCE7F5;
+        }
+
+        &.instagram{
+            background-color: #F5DCE2;
+        }
+    }
+
+    
+}

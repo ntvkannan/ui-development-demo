@@ -1,0 +1,33 @@
+//////////////////////////////////////////////
+/// HEADER
+.wp-header{
+    height:80px;
+    background: #fff;
+    border-bottom: 1px solid $gray-100;
+
+    .navbar {
+        background: #fff;
+    }
+
+    .nav-item{
+        &:not(:last-child){
+            margin-right:40px;
+
+            @include media-breakpoint-up(lg) {
+                margin-right:24px;
+            }
+        }
+    }
+    .navbar-nav .nav-link{
+        color: $black;
+
+        &.active{
+            font-weight: 500;
+        }
+    }
+
+    .btn{
+        background: $black;
+        font-size: 0.875rem;
+    }
+}

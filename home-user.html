@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Writing Pad</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wp-overlay"></div>
+    <div class="container-xxl">
+        <div class="wp-container">
+            <!-- ======= NAVIGATION LEFT ======= -->
+            <div class="wp-container__left-nav ">
+                <div class="close-nav">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <img src="assets/images/writing-pad-logo.svg" class="wp-logo" />
+                <!-- Nav left -->
+                <nav class="wp-nav-left">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <span class="material-symbols-outlined">home</span>
+                                <span class="wp-nav-left__text">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">Stories</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">Poetry</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">Serials</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">My Collections</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">My Writings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">Drafts</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">Katte Panchayti</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">Audiobooks</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">Videos</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">People</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">Profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="material-symbols-outlined"> import_contacts </span>
+                                <span class="wp-nav-left__text">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div><!-- End navigation -->
+            <!-- ======= MAIN CONTENT ======= -->
+            <main class="wp-container__main sticky-top">
+                <!-- Header -->
+                <header class="app-header">
+                    <div class="app-header__left">
+                        <div class="app-header__toggle-icon toggle-menu">
+                            <span class="material-symbols-outlined">menu</span>
+                        </div>
+                        <h4 class="app-header__title">Home</h4>
+                    </div>
+                    <div class="input-group app-header__search">
+                        <span class="input-group-text">
+                            <span class="material-symbols-outlined">search</span>
+                        </span>
+                        <input class="form-control" placeholder="search" />
+                    </div>
+                    <div class="app-header__right">
+                        <div class="dropdown">
+                            <button class="btn btn-dark" data-bs-toggle="dropdown">Create New</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Discussion</a></li>
+                                <li><a class="dropdown-item" href="#">Audiobook</a></li>
+                                <li><a class="dropdown-item" href="#">Video</a></li>
+                            </ul>
+                        </div>
+                        <div class="app-header__toggle-icon toggle-action">
+                            <span class="material-symbols-outlined">account_circle</span>
+                        </div>
+                    </div>
+                </header>
+                <!-- Article of the day -->
+                <section class="uh-section">
+                    <h4 class="uh-section__heading">Article of the day</h4>
+                    <div class="day-card">
+                        <div class="day-card__content">
+                            <h4 class="day-card__heading">Mathsya Sundari</h4>
+                            <div class="day-card__desc">
+                                An abstract and thriller story of a sailor
+                                meeting a mermaid in the middle of ocean
+                            </div>
+                            <div class="day-car__btn">
+                                <button class="btn btn-primary">Read now</button>
+                            </div>
+                        </div>
+                        <div class="day-card__img">
+                            <img src="assets/images/article-of-the-day.png" alt="Article of the day" />
+                        </div>
+                    </div>
+                </section>
+                <!-- Stories for you -->
+                <section class="uh-section">
+                    <h4 class="uh-section__heading">Stories for you</h4>
+                    <div class="owl-carousel tag-carousel">
+                        <button class="btn btn-sm btn-outline-light btn-dark">All</button>
+                        <button class="btn btn-sm btn-outline-light">Productivity</button>
+                        <button class="btn btn-sm btn-outline-light">Health</button>
+                        <button class="btn btn-sm btn-outline-light">Space Technology</button>
+                        <button class="btn btn-sm btn-outline-light">Home Decor</button>
+                        <button class="btn btn-sm btn-outline-light">Wildlife</button>
+                        <button class="btn btn-sm btn-outline-light">Sports</button>
+                        <button class="btn btn-sm btn-outline-light">Interior Desing</button>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <!-- Story card -->
+                        <div class="col">
+                            <div class="story-card">
+                                <img src="assets/images/story-card.png" alt="" class="new-card-portrait__img" />
+                                <div class="story-card__heading-up">
+                                    <span class="story-card__category">Productivity</span>
+                                    <span class="story-card__divider"></span>
+                                    <span class="story-card__mins-read">23 Mins read</span>
+                                </div>
+                                <h4 class="story-card__heading">
+                                    I always loved aesthetics : A deep look at the workspace
+                                </h4>
+                                <div class="story-card__desc">
+                                    Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus deserenda est. Sed eum qui audiebant, quoad poterant, defendebant sententiam suam.
+                                </div>
+                                <div class="divider-hr"></div>
+                                <div class="author-box-gl author-box-gl-sm">
+                                    <div class="author__photo">
+                                        <img src="assets/images/author-sml.png" alt="author" />
+                                    </div>
+                                    <div class="author__txt">
+                                        <div class="author__name">Lovakovia Alan</div>
+                                        <div class="author__position">Dog Trainer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Story card -->
+                        <div class="col">
+                            <div class="story-card">
+                                <img src="assets/images/story-2.png" alt="" class="new-card-portrait__img" />
+                                <div class="story-card__heading-up">
+                                    <span class="story-card__category">Surfing</span>
+                                    <span class="story-card__divider"></span>
+                                    <span class="story-card__mins-read">15 Mins read</span>
+                                </div>
+                                <h4 class="story-card__heading">
+                                    The unmatched thrill from Surfing
+                                </h4>
+                                <div class="story-card__desc">
+                                    My experience surfing for the first time in the Indian ocean.
+                                </div>
+                                <div class="divider-hr"></div>
+                                <div class="author-box-gl author-box-gl-sm">
+                                    <div class="author__photo">
+                                        <img src="assets/images/author-2.png" alt="author" />
+                                    </div>
+                                    <div class="author__txt">
+                                        <div class="author__name">Jane Cooper</div>
+                                        <div class="author__position">Web Designer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Story card -->
+                        <div class="col">
+                            <div class="story-card">
+                                <img src="assets/images/story-3.png" alt="" class="new-card-portrait__img" />
+                                <div class="story-card__heading-up">
+                                    <span class="story-card__category">Space technology</span>
+                                    <span class="story-card__divider"></span>
+                                    <span class="story-card__mins-read">19 Mins read</span>
+                                </div>
+                                <h4 class="story-card__heading">
+                                    Space X : Inside the new spaceship
+                                </h4>
+                                <div class="story-card__desc">
+                                    A space ship to carry humans to Mars!
+                                </div>
+                                <div class="divider-hr"></div>
+                                <div class="author-box-gl author-box-gl-sm">
+                                    <div class="author__photo">
+                                        <img src="assets/images/author-3.png" alt="author" />
+                                    </div>
+                                    <div class="author__txt">
+                                        <div class="author__name">Jacob Jones</div>
+                                        <div class="author__position">President of Sales</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Story card -->
+                        <div class="col">
+                            <div class="story-card">
+                                <img src="assets/images/story-4.png" alt="" class="new-card-portrait__img" />
+                                <div class="story-card__heading-up">
+                                    <span class="story-card__category">Home Decor</span>
+                                    <span class="story-card__divider"></span>
+                                    <span class="story-card__mins-read">10 Mins read</span>
+                                </div>
+                                <h4 class="story-card__heading">
+                                    Everything about plants : Therapy
+                                </h4>
+                                <div class="story-card__desc">
+                                    Plants are the best friends of humans when cared well with tiny efforts
+                                </div>
+                                <div class="divider-hr"></div>
+                                <div class="author-box-gl author-box-gl-sm">
+                                    <div class="author__photo">
+                                        <img src="assets/images/author-4.png" alt="author" />
+                                    </div>
+                                    <div class="author__txt">
+                                        <div class="author__name">Annette Black</div>
+                                        <div class="author__position">Medical Assistant</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Editor Picks  -->
+                <section class="uh-section">
+                    <h4 class="uh-section__heading">Editor Picks</h4>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-4">
+                        <!-- Card -->
+                        <div class="col">
+                            <div class="epics-card">
+                                <img src="assets/images/editor-pics-1.png" class="epics-card__img" />
+                                <div class="epics-card__content-up user-loggedin">
+                                    <span class="epics-card__rating">
+                                        <span class="material-symbols-outlined epics-card__icon">star</span>
+                                        <strong>4.3</strong>(1.3k)
+                                    </span>
+                                </div>
+                                <div class="epics-card__content-down">
+                                    <h4 class="epics-card__heading">Wild Beasts in Danger</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="col">
+                            <div class="epics-card">
+                                <img src="assets/images/editor-pics-2.png" class="epics-card__img" />
+                                <div class="epics-card__content-up user-loggedin">
+                                    <span class="epics-card__rating">
+                                        <span class="material-symbols-outlined epics-card__icon">star</span>
+                                        <strong>4.3</strong>(1.3k)
+                                    </span>
+                                </div>
+                                <div class="epics-card__content-down">
+                                    <h4 class="epics-card__heading">A Healthy Start</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="col">
+                            <div class="epics-card">
+                                <img src="assets/images/editor-pics-3.png" class="epics-card__img" />
+                                <div class="epics-card__content-up user-loggedin">
+                                    <span class="epics-card__rating">
+                                        <span class="material-symbols-outlined epics-card__icon">star</span>
+                                        <strong>4.3</strong>(1.3k)
+                                    </span>
+                                </div>
+                                <div class="epics-card__content-down">
+                                    <h4 class="epics-card__heading">Minimal Home Decor</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="col">
+                            <div class="epics-card">
+                                <img src="assets/images/editor-pics.png" class="epics-card__img" />
+                                <div class="epics-card__content-up user-loggedin">
+                                    <span class="epics-card__rating">
+                                        <span class="material-symbols-outlined epics-card__icon">star</span>
+                                        <strong>4.3</strong>(1.3k)
+                                    </span>
+                                </div>
+                                <div class="epics-card__content-down">
+                                    <h4 class="epics-card__heading">Mathsya Sundari</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Popular Authors  -->
+                <section class="uh-section">
+                    <h4 class="uh-section__heading">Popular Authors</h4>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        <!-- Author Card Landscape -->
+                        <div class="col">
+                            <div class="author-box-gl">
+                                <div class="author__photo">
+                                    <img src="assets/images/author-10.png" alt="author" />
+                                </div>
+                                <div class="author__txt">
+                                    <div class="author__name">Annette Black</div>
+                                    <div class="author__position">Medical Assistant</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Author Card Landscape -->
+                        <div class="col">
+                            <div class="author-box-gl">
+                                <div class="author__photo">
+                                    <img src="assets/images/author-6.png" alt="author" />
+                                </div>
+                                <div class="author__txt">
+                                    <div class="author__name">Darlene Roberts</div>
+                                    <div class="author__position">Nursing Assistant</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Author Card Landscape -->
+                        <div class="col">
+                            <div class="author-box-gl">
+                                <div class="author__photo">
+                                    <img src="assets/images/author-7.png" alt="author" />
+                                </div>
+                                <div class="author__txt">
+                                    <div class="author__name">Ronald Richards</div>
+                                    <div class="author__position">President of Sales</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Author Card Landscape -->
+                        <div class="col">
+                            <div class="author-box-gl">
+                                <div class="author__photo">
+                                    <img src="assets/images/author-8.png" alt="author" />
+                                </div>
+                                <div class="author__txt">
+                                    <div class="author__name">Jenny Wilson</div>
+                                    <div class="author__position">Marketing Coordinat</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Author Card Landscape -->
+                        <div class="col">
+                            <div class="author-box-gl">
+                                <div class="author__photo">
+                                    <img src="assets/images/author-9.png" alt="author" />
+                                </div>
+                                <div class="author__txt">
+                                    <div class="author__name">Esther Howard</div>
+                                    <div class="author__position">Medical Assistant</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Author Card Landscape -->
+                        <div class="col">
+                            <div class="author-box-gl">
+                                <div class="author__photo">
+                                    <img src="assets/images/author-5.png" alt="author" />
+                                </div>
+                                <div class="author__txt">
+                                    <div class="author__name">Courtney Henry</div>
+                                    <div class="author__position">Web Designer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Audio Books  -->
+                <section class="uh-section bg-light">
+                    <h4 class="uh-section__heading">Audio Books</h4>
+                    <div class="owl-carousel audio-carousel">
+                        <!-- Audio Card -->
+                        <div class="audio-video-card">
+                            <img src="assets/images/audio.png" alt="" class="audio__img" />
+                            <span class="audio__ratings"><strong>4.3</strong> (1.1k)</span>
+                            <div class="audio__heading-up">
+                                <span class="audio__category">Wildlife</span>
+                                <span class="audio__divider"></span>
+                                <span class="audio__mins-read">11 Mins listen</span>
+                            </div>
+                            <h4 class="audio__heading">Characteristics of colorful serpants - 1</h4>
+                            <div class="audio__desc">Rahat Fateh Shah</div>
+                            <div class="audio__btn-row">
+                                <div class="audio__price">
+                                    <strong class="audio__price-new">₹210.00</strong>
+                                    <span class="audio__price-old">₹350</span>
+                                </div>
+                                <a href="#">
+                                    <span class="material-symbols-outlined icon-fill">play_arrow</span>
+                                    Play clip
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Audio Card -->
+                        <div class="audio-video-card">
+                            <img src="assets/images/audio-2.png" alt="" class="audio__img" />
+                            <span class="audio__ratings"><strong>4.3</strong> (1.1k)</span>
+                            <div class="audio__heading-up">
+                                <span class="audio__category">Wildlife</span>
+                                <span class="audio__divider"></span>
+                                <span class="audio__mins-read">11 Mins listen</span>
+                            </div>
+                            <h4 class="audio__heading">The art of creating a custom Android Operating system : The</h4>
+                            <div class="audio__desc">Rahat Fateh Shah</div>
+                            <div class="audio__btn-row">
+                                <div class="audio__price">
+                                    <strong class="audio__price-new">₹210.00</strong>
+                                    <span class="audio__price-old">₹350</span>
+                                </div>
+                                <a href="#">
+                                    <span class="material-symbols-outlined icon-fill">play_arrow</span>
+                                    Play clip
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Audio Card -->
+                        <div class="audio-video-card">
+                            <img src="assets/images/audio-3.png" alt="" class="audio__img" />
+                            <span class="audio__ratings"><strong>4.3</strong> (1.1k)</span>
+                            <div class="audio__heading-up">
+                                <span class="audio__category">Technology</span>
+                                <span class="audio__divider"></span>
+                                <span class="audio__mins-read">11 Mins listen</span>
+                            </div>
+                            <h4 class="audio__heading">Characteristics of colorful serpants - 1</h4>
+                            <div class="audio__desc">Random Writer</div>
+                            <div class="audio__btn-row">
+                                <div class="audio__price">
+                                    <strong class="audio__price-new">₹210.00</strong>
+                                    <span class="audio__price-old">₹350</span>
+                                </div>
+                                <a href="#">
+                                    <span class="material-symbols-outlined icon-fill">play_arrow</span>
+                                    Play clip
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Audio Card -->
+                        <div class="audio-video-card">
+                            <img src="assets/images/audio.png" alt="" class="audio__img" />
+                            <span class="audio__ratings"><strong>4.3</strong> (1.1k)</span>
+                            <div class="audio__heading-up">
+                                <span class="audio__category">Wildlife</span>
+                                <span class="audio__divider"></span>
+                                <span class="audio__mins-read">11 Mins listen</span>
+                            </div>
+                            <h4 class="audio__heading">Characteristics of colorful serpants - 1</h4>
+                            <div class="audio__desc">Rahat Fateh Shah</div>
+                            <div class="audio__btn-row">
+                                <div class="audio__price">
+                                    <strong class="audio__price-new">₹210.00</strong>
+                                    <span class="audio__price-old">₹350</span>
+                                </div>
+                                <a href="#">
+                                    <span class="material-symbols-outlined icon-fill">play_arrow</span>
+                                    Play clip
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Audio Card -->
+                        <div class="audio-video-card">
+                            <img src="assets/images/audio.png" alt="" class="audio__img" />
+                            <span class="audio__ratings"><strong>4.3</strong> (1.1k)</span>
+                            <div class="audio__heading-up">
+                                <span class="audio__category">Wildlife</span>
+                                <span class="audio__divider"></span>
+                                <span class="audio__mins-read">11 Mins listen</span>
+                            </div>
+                            <h4 class="audio__heading">Characteristics of colorful serpants - 1</h4>
+                            <div class="audio__desc">Rahat Fateh Shah</div>
+                            <div class="audio__btn-row">
+                                <div class="audio__price">
+                                    <strong class="audio__price-new">₹210.00</strong>
+                                    <span class="audio__price-old">₹350</span>
+                                </div>
+                                <a href="#">
+                                    <span class="material-symbols-outlined icon-fill">play_arrow</span>
+                                    Play clip
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main><!-- End main content -->
+            <!-- ======= SIDEBAR ======= -->
+            <div class="wp-container__sidebar">
+                <div class="close-sidebar">X</div>
+                 <!-- User -->
+                <div class="user">
+                    <div class="user__box">
+                        <div class="user__photo">
+                            <img src="assets/images/user.png" alt="user" />
+                        </div>
+                        <div class="user__text">
+                            <div class="user__name">Mayur M</div>
+                            <div class="user__pos">Product Designer</div>
+                        </div>
+                    </div>
+                    <div class="user__notification">
+                        <span class="material-symbols-outlined"> notifications</span>
+                    </div>
+                </div>
+                <!-- Advertisement -->
+                <div class="sidebar-section">
+                    <img src="assets/images/ad-sidebar.png" alt="Advertisement" class="img-fluid" />
+                </div>
+                <!-- Trending Topics -->
+                <div class="sidebar-section">
+                    <h4 class="sidebar-section__heading">Trending Topics</h4>
+                    <div class="sidebar-section__heading-down">
+                        <button class="btn btn-outline-light">Productivity</button>
+                        <button class="btn btn-outline-light">Social Media</button>
+                        <button class="btn btn-outline-light">Politics</button>
+                        <button class="btn btn-outline-light">Business</button>
+                        <button class="btn btn-outline-light">Programming</button>
+                        <button class="btn btn-outline-light">Crypto</button>
+                    </div>
+                </div>
+            </div><!-- End sidebar -->
+        </div>
+    </div>
+    <!-- ======= FOOTER ======= -->
+    <footer class="wp-footer">
+        <div class="container">
+            <section class="wp-footer__row">
+                <div class="wp-footer__left">
+                    <a href="#" class="wp-footer__logo"><img src="assets/images/writing-pad-logo.svg" alt="writing-pad"></a>
+                    <div class="wp-footer__logo-down">Design amazing digital experiences that create more happy in the world.</div>
+                    <nav class="wp-footer__nav">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Audiobooks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Discussions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Videos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="wp-footer__right">
+                    <div class="get-app">
+                        <div class="get-app__title">Get the app</div>
+                        <a href="#"><img src="assets/images/app-store.png" /></a>
+                        <a href="#"><img src="assets/images/google-play.png" /></a>
+                    </div>
+                </div>
+            </section>
+            <section class="wp-footer__row">
+                <div class="wp-footer__left">
+                    <div class="wp-footer__copyright mb-0">© 2023 WritingPad. All rights reserved.</div>
+                </div>
+                <div class="wp-footer__right">
+                    <div class="wp-footer__designby">Designed by <strong>Mayur M</strong></div>
+                </div>
+            </section>
+        </div>
+    </footer><!-- End Footer -->
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/wp-custom.js"></script>
+  </body>
+</html>

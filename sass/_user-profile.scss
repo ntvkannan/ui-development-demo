@@ -1,0 +1,92 @@
+///////////////////////////////////////
+/// PROFILE CARD
+.profile-card{
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 64px auto;
+    font-size: 0.875rem;
+    color: $gray-500;
+
+    .profile{
+
+        &__photo{
+            display: inline-block;
+            width:104px;
+            height: 104px;
+            border-radius: 100%;
+            margin-bottom: 12px;
+        }
+
+        &__name{
+            font-weight: 600;
+            font-size: 1rem;
+            color: $black;
+            margin-bottom: 4px;
+        }
+
+        &__position{
+            margin-bottom: 16px;
+        }
+
+        &__followers-qty{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__summary-box{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        &__summary-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            margin: 24px;
+        }
+
+        &__summary-qty{
+            color: $black;
+            font-weight: 500;
+        }
+    }
+
+    .btn-outline-danger{
+        border: 1px solid $gray-300;
+    }
+
+    .btn-outline-primary{
+        border: 1px solid $primary-100;
+        background: $primary-100;
+
+        &:hover{
+            background: $primary;
+        }
+    }
+}
+
+.nav-tabs {
+    .nav-link {
+        font-size: 1rem;
+        color: $gray-500;
+        padding: 0.8rem 1.6rem;
+        border: none;
+        border-bottom: 2px solid transparent;
+
+        &.active{
+            color: $primary;
+            background-color:$primary-50 ;
+            border:none;
+            border-bottom: 2px solid $primary-700;
+        }
+    }
+}
+
+.tab-content{
+    padding-top: 40px;
+}
